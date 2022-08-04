@@ -1,0 +1,321 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class hola here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Volcano extends World
+{
+
+    /**
+     * Constructor for objects of class hola.
+     * 
+     */
+    public Volcano()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(600, 600, 1); 
+        prepare();
+    }
+    public void act()
+    {
+        showText("Score: " + Futuristic.scoreP, 555, 584);
+    }
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Futuristic.countP = 0;
+        Wall2 wall2 = new Wall2();
+        addObject(wall2,11*50,11*50);
+        Wall2 wall22 = new Wall2();
+        addObject(wall22,11*50,10*50);
+        Wall2 wall23 = new Wall2();
+        addObject(wall23,11*50,9*50);
+        Wall2 wall24 = new Wall2();
+        addObject(wall24,10*50,8*50);
+        Wall2 wall25 = new Wall2();
+        addObject(wall25,11*50,8*50);
+        Wall2 wall26 = new Wall2();
+        addObject(wall26,9*50,7*50);
+        Wall2 wall27 = new Wall2();
+        addObject(wall27,9*50,8*50);
+        Wall2 wall28 = new Wall2();
+        addObject(wall28,9*50,6*50);
+        Wall2 wall29 = new Wall2();
+        addObject(wall29,10*50,5*50);
+        Wall2 wall210 = new Wall2();
+        addObject(wall210,9*50,5*50);
+        Wall2 wall211 = new Wall2();
+        addObject(wall211,10*50,4*50);
+        Wall2 wall212 = new Wall2();
+        addObject(wall212,10*50,3*50);
+        Wall2 wall213 = new Wall2();
+        addObject(wall213,10*50,2*50);
+        Wall2 wall214 = new Wall2();
+        addObject(wall214,11*50,2*50);
+        Wall2 wall215 = new Wall2();
+        addObject(wall215,11*50,1*50);
+        Wall2 wall216 = new Wall2();
+        addObject(wall216,10*50,0*50);
+        Wall2 wall217 = new Wall2();
+        addObject(wall217,11*50,0*50);
+        Wall2 wall218 = new Wall2();
+        addObject(wall218,9*50,0*50);
+        Wall2 wall219 = new Wall2();
+        addObject(wall219,8*50,0*50);
+        Wall2 wall220 = new Wall2();
+        addObject(wall220,7*50,1*50);
+        Wall2 wall221 = new Wall2();
+        addObject(wall221,7*50,0*50);
+        Wall2 wall222 = new Wall2();
+        addObject(wall222,6*50,1*50);
+        Wall2 wall223 = new Wall2();
+        addObject(wall223,5*50,1*50);
+        Wall2 wall224 = new Wall2();
+        addObject(wall224,4*50,2*50);
+        Wall2 wall225 = new Wall2();
+        addObject(wall225,3*50,3*50);
+        Wall2 wall226 = new Wall2();
+        addObject(wall226,3*50,2*50);
+        Wall2 wall227 = new Wall2();
+        addObject(wall227,4*50,1*50);
+        Wall2 wall228 = new Wall2();
+        addObject(wall228,2*50,2*50);
+        Wall2 wall229 = new Wall2();
+        addObject(wall229,0*50,0*50);
+        Wall2 wall230 = new Wall2();
+        addObject(wall230,1*50,1*50);
+        Wall2 wall231 = new Wall2();
+        addObject(wall231,1*50,0*50);
+        Wall2 wall232 = new Wall2();
+        addObject(wall232,1*50,2*50);
+        Wall2 wall233 = new Wall2();
+        addObject(wall233,0*50,11*50);
+        Wall2 wall234 = new Wall2();
+        addObject(wall234,0*50,10*50);
+        Wall2 wall235 = new Wall2();
+        addObject(wall235,0*50,9*50);
+        Wall2 wall236 = new Wall2();
+        addObject(wall236,1*50,9*50);
+        Wall2 wall237 = new Wall2();
+        addObject(wall237,2*50,9*50);
+        Wall2 wall238 = new Wall2();
+        addObject(wall238,3*50,10*50);
+        Wall2 wall239 = new Wall2();
+        addObject(wall239,3*50,9*50);
+        Wall2 wall240 = new Wall2();
+        addObject(wall240,3*50,11*50);
+        Wall2 wall241 = new Wall2();
+        addObject(wall241,4*50,10*50);
+        Wall2 wall242 = new Wall2();
+        addObject(wall242,5*50,10*50);
+        Wall2 wall243 = new Wall2();
+        addObject(wall243,6*50,10*50);
+        Wall2 wall244 = new Wall2();
+        addObject(wall244,6*50,11*50);
+        Wall2 wall245 = new Wall2();
+        addObject(wall245,7*50,10*50);
+        Wall2 wall246 = new Wall2();
+        addObject(wall246,8*50,10*50);
+        Wall2 wall247 = new Wall2();
+        addObject(wall247,9*50,10*50);
+        Wall2 wall248 = new Wall2();
+        addObject(wall248,7*50,9*50);
+        Wall2 wall249 = new Wall2();
+        addObject(wall249,6*50,8*50);
+        Wall2 wall250 = new Wall2();
+        addObject(wall250,7*50,8*50);
+        Wall2 wall251 = new Wall2();
+        addObject(wall251,6*50,7*50);
+        Wall2 wall252 = new Wall2();
+        addObject(wall252,6*50,6*50);
+        Wall2 wall253 = new Wall2();
+        addObject(wall253,6*50,5*50);
+        Wall2 wall254 = new Wall2();
+        addObject(wall254,5*50,5*50);
+        Wall2 wall255 = new Wall2();
+        addObject(wall255,4*50,5*50);
+        Wall2 wall256 = new Wall2();
+        addObject(wall256,4*50,6*50);
+        Wall2 wall257 = new Wall2();
+        addObject(wall257,3*50,6*50);
+        Wall2 wall258 = new Wall2();
+        addObject(wall258,2*50,6*50);
+        Wall2 wall259 = new Wall2();
+        addObject(wall259,1*50,5*50);
+        Wall2 wall260 = new Wall2();
+        addObject(wall260,1*50,6*50);
+        Wall2 wall261 = new Wall2();
+        addObject(wall261,1*50,4*50);
+        Wall2 wall262 = new Wall2();
+        addObject(wall262,1*50,3*50);
+        Wall2 wall263 = new Wall2();
+        addObject(wall263,551,596);
+        wall263.setLocation(555,584);
+        wall263.setLocation(550,584);
+        wall219.setLocation(412,58);
+        wall219.setLocation(385,19);
+        wall218.setLocation(439,38);
+        wall216.setLocation(494,41);
+        wall218.setLocation(461,40);
+        wall219.setLocation(411,37);
+        wall216.setLocation(505,16);
+        wall218.setLocation(450,24);
+        wall216.setLocation(495,27);
+        wall218.setLocation(448,26);
+        wall219.setLocation(498,25);
+        wall218.setLocation(406,94);
+        wall216.setLocation(418,143);
+        wall216.setLocation(402,16);
+        wall216.setLocation(400,25);
+        wall219.setLocation(456,11);
+        wall219.setLocation(450,25);
+        wall218.setLocation(500,25);
+        wall229.setLocation(10,34);
+        wall229.setLocation(10,44);
+        wall229.setLocation(7,25);
+        wall234.setLocation(23,500);
+        wall233.setLocation(18,540);
+        wall233.setLocation(23,549);
+        Wall2 wall264 = new Wall2();
+        addObject(wall264,24,596);
+        wall264.setLocation(23,596);
+        wall233.setLocation(61,576);
+        P p = new P();
+        addObject(p,43,568);
+        wall264.setLocation(48,576);
+        wall264.setLocation(60,576);
+        wall233.setLocation(122,513);
+        wall264.setLocation(60,565);
+        p.setLocation(213,563);
+        wall233.setLocation(74,516);
+        wall264.setLocation(60,575);
+        wall233.setLocation(43,525);
+        wall234.setLocation(43,493);
+        p.setLocation(43,568);
+        wall264.setLocation(43,575);
+        Wall2 wall265 = new Wall2();
+        addObject(wall265,599,576);
+        Wall2 wall266 = new Wall2();
+        addObject(wall266,599,527);
+        Wall2 wall267 = new Wall2();
+        addObject(wall267,598,478);
+        Wall2 wall268 = new Wall2();
+        addObject(wall268,597,428);
+        Wall2 wall269 = new Wall2();
+        addObject(wall269,597,399);
+        wall269.setLocation(588,383);
+        wall269.setLocation(588,400);
+        wall2.setLocation(563,564);
+        Finish finish = new Finish();
+        addObject(finish,563,564);
+        wall2.setLocation(588,575);
+        wall2.setLocation(582,568);
+        finish.setLocation(555,574);
+        finish.setLocation(590,535);
+        wall2.setLocation(548,544);
+        wall2.setLocation(547,547);
+        wall2.setLocation(547,548);
+        wall2.setLocation(549,548);
+        wall2.setLocation(550,545);
+        wall2.setLocation(609,572);
+        wall263.setLocation(564,582);
+        wall263.setLocation(568,550);
+        wall263.setLocation(570,540);
+        wall263.setLocation(580,541);
+        finish.setLocation(545,539);
+        finish.setLocation(539,539);
+        finish.setLocation(544,539);
+        wall263.setLocation(557,540);
+        finish.setLocation(547,536);
+        wall22.setLocation(535,504);
+        wall266.setLocation(581,504);
+        wall267.setLocation(582,488);
+        wall23.setLocation(536,460);
+        wall268.setLocation(576,445);
+        finish.setLocation(534,533);
+        wall263.setLocation(440,535);
+        wall2.setLocation(464,454);
+        wall263.setLocation(435,587);
+        wall2.setLocation(533,575);
+        wall263.setLocation(592,576);
+        wall265.setLocation(391,239);
+        wall23.setLocation(536,445);
+        wall22.setLocation(536,500);
+        wall247.setLocation(536,494);
+        wall2.setLocation(536,576);
+        wall263.setLocation(584,576);
+        finish.setLocation(586,535);
+        wall265.setLocation(392,203);
+        wall265.setLocation(576,353);
+        removeObject(p);
+        wall264.setLocation(43,564);
+        P p2 = new P();
+        addObject(p2,43,568);
+        wall264.setLocation(58,584);
+        wall264.setLocation(60,588);
+        wall264.setLocation(56,592);
+        wall264.setLocation(43,576);
+        wall233.setLocation(43,523);
+        wall233.setLocation(43,526);
+        Coin coin = new Coin();
+        addObject(coin,48,404);
+        coin.setLocation(36,395);
+        Coin coin2 = new Coin();
+        addObject(coin2,345,576);
+        Coin coin3 = new Coin();
+        addObject(coin3,332,202);
+        Coin coin4 = new Coin();
+        addObject(coin4,20,19);
+        Coin coin5 = new Coin();
+        addObject(coin5,576,152);
+        wall256.setLocation(201,298);
+        Coin coin6 = new Coin();
+        addObject(coin6,201,298);
+        wall221.setLocation(357,21);
+        Coin coin7 = new Coin();
+        addObject(coin7,357,21);
+        wall256.setLocation(199,300);
+        Monster monster = new Monster();
+        addObject(monster,397,500);
+        wall252.setLocation(402,500);
+        wall246.setLocation(300,300);
+        wall252.setLocation(397,500);
+        Monster monster2 = new Monster();
+        addObject(monster2,150,549);
+        wall240.setLocation(150,549);
+        Monster monster3 = new Monster();
+        addObject(monster3,156,139);
+        wall225.setLocation(155,141);
+        Monster monster4 = new Monster();
+        addObject(monster4,573,361);
+        wall265.setLocation(577,361);
+        Monster monster5 = new Monster();
+        addObject(monster5,558,105);
+        wall214.setLocation(550,100);
+        wall214.setLocation(559,109);
+        wall214.setLocation(550,100);
+        coin5.setLocation(556,155);
+        wall253.setLocation(305,236);
+        Monster monster6 = new Monster();
+        addObject(monster6,305,243);
+        wall253.setLocation(300,250);
+        coin3.setLocation(264,202);
+        wall253.setLocation(300,250);
+        Monster monster7 = new Monster();
+        addObject(monster7,444,241);
+        Coin2 coin22 = new Coin2();
+        addObject(coin22,556,485);
+        wall267.setLocation(575,474);
+        removeObject(coin22);
+        wall22.setLocation(556,481);
+        Coin4 coin42 = new Coin4();
+        addObject(coin42,556,481);
+    }
+}
