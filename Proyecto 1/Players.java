@@ -35,6 +35,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(43, 568);
                 }
             }
@@ -53,6 +54,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(43, 568);
                 }
             }
@@ -71,6 +73,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(43, 568);
                 }
             }
@@ -89,6 +92,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(43, 568);
                 }
             }
@@ -112,6 +116,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(977, 550);
                 }
             }
@@ -130,6 +135,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(977, 550);
                 }
             }
@@ -148,6 +154,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(977, 550);
                 }
             }
@@ -166,6 +173,7 @@ public class Players extends Actor
             {
                 if (walls2() == false)
                 {
+                    Greenfoot.playSound("Lava.mp3");
                     setLocation(977, 550);
                 }
             }
@@ -175,7 +183,6 @@ public class Players extends Actor
     {
         if(isTouching(Wall.class))
         {
-            
             return true;
         }
         else
@@ -187,7 +194,6 @@ public class Players extends Actor
     {
         if(isTouching(Wall2.class))
         {
-            
             return true;
         }
         else
@@ -221,6 +227,7 @@ public class Players extends Actor
     {
         if(isTouching(Coin.class))
         {
+            Greenfoot.playSound("Normal coin.mp3");
             Futuristic.scoreP++;
             removeTouching(Coin.class);
             Futuristic.countP++;
@@ -230,6 +237,7 @@ public class Players extends Actor
     {
         if(isTouching(Coin2.class) & Futuristic.countP == 5)
         {
+            Greenfoot.playSound("Mega coin.mp3");
             Futuristic.scoreP = Futuristic.scoreP + 3;
             removeTouching(Coin2.class); 
         }
@@ -240,12 +248,14 @@ public class Players extends Actor
         {
             if(getWorld() instanceof Futuristic2)
             {
+                Greenfoot.playSound("Normal coin.mp3");
                 Futuristic2.scoreP1++;
                 removeTouching(Coin.class);
                 Futuristic2.countP1++;
             }
             else if(getWorld() instanceof Volcano2)
             {
+                Greenfoot.playSound("Normal coin.mp3");
                 Futuristic2.scoreP1++;
                 Volcano2.scoreVolP1++;
                 removeTouching(Coin.class);
@@ -259,11 +269,13 @@ public class Players extends Actor
         {
             if(getWorld() instanceof Futuristic2)
             {
+                Greenfoot.playSound("Mega coin.mp3");
                 Futuristic2.scoreP1 = Futuristic2.scoreP1 + 3;
                 removeTouching(Coin2.class);
             }
             else if(getWorld() instanceof Volcano2)
             {
+                Greenfoot.playSound("Mega coin.mp3");
                 Futuristic2.scoreP1 = Futuristic2.scoreP1 + 3;
                 Volcano2.scoreVolP1 = Volcano2.scoreVolP1 + 3;
                 removeTouching(Coin2.class);
@@ -276,11 +288,13 @@ public class Players extends Actor
         {
             if(getWorld() instanceof Futuristic2)
             {
+                Greenfoot.playSound("Mega coin.mp3");
                 Futuristic2.scoreP2 = Futuristic2.scoreP2 + 3;
                 removeTouching(Coin2.class);
             }
             else if(getWorld() instanceof Volcano2)
             {
+                Greenfoot.playSound("Mega coin.mp3");
                 Futuristic2.scoreP2 = Futuristic2.scoreP2 + 3;
                 Volcano2.scoreVolP2 = Volcano2.scoreVolP2 + 3;
                 removeTouching(Coin2.class);
@@ -293,12 +307,14 @@ public class Players extends Actor
         {
             if(getWorld() instanceof Futuristic2)
             {
+                Greenfoot.playSound("Normal coin.mp3");
                 Futuristic2.scoreP2++;
                 removeTouching(Coin3.class);
                 Futuristic2.countP2++;
             }
             else if(getWorld() instanceof Volcano2)
             {
+                Greenfoot.playSound("Normal coin.mp3");
                 Futuristic2.scoreP2++;
                 Volcano2.scoreVolP2++;
                 removeTouching(Coin3.class);
@@ -310,6 +326,7 @@ public class Players extends Actor
     {
         if(isTouching(Coin4.class) & Futuristic.countP == 7)
         {
+            Greenfoot.playSound("Mega coin.mp3");
             Futuristic.scoreP = Futuristic.scoreP + 3;
             removeTouching(Coin4.class); 
         }
@@ -318,6 +335,7 @@ public class Players extends Actor
     {
         if(isTouching(Coin4.class) & Futuristic2.countP1 == 7)
         {
+            Greenfoot.playSound("Mega coin.mp3");
             Futuristic2.scoreP1 = Futuristic2.scoreP1 + 3;
             Volcano2.scoreVolP1 = Volcano2.scoreVolP1 + 3;
             removeTouching(Coin4.class); 
@@ -327,6 +345,7 @@ public class Players extends Actor
     {
         if(isTouching(Coin4.class)  & Futuristic2.countP2 == 7)
         {
+            Greenfoot.playSound("Mega coin.mp3");
             Futuristic2.scoreP2 = Futuristic2.scoreP2 + 3;
             Volcano2.scoreVolP2 = Volcano2.scoreVolP2 + 3;
             removeTouching(Coin4.class);
@@ -338,6 +357,7 @@ public class Players extends Actor
         {
             if(isTouching(Finish.class) & (Futuristic2.countP1 == 5 | Futuristic2.countP2 == 5))
             {
+                Greenfoot.playSound("Finish.mp3");
                 getWorld().addObject(new Level2(), getWorld().getWidth()/2, getWorld().getHeight()/2);
                 getWorld().addObject(new Next(), getWorld().getWidth()/2, 550);
                 if(Futuristic2.scoreP1 > Futuristic2.scoreP2)
@@ -354,6 +374,7 @@ public class Players extends Actor
         {
             if(isTouching(Finish.class) & (Futuristic2.countP1 == 7 | Futuristic2.countP2 ==7))
             {
+                Greenfoot.playSound("Finish.mp3");
                 getWorld().addObject(new Level2(), getWorld().getWidth()/2, getWorld().getHeight()/2);
                 getWorld().addObject(new Results(), getWorld().getWidth()/2, 550);
                 if(Volcano2.scoreVolP1 > Volcano2.scoreVolP2)
@@ -373,6 +394,7 @@ public class Players extends Actor
         {
             if(isTouching(Finish.class) & (Futuristic.countP == 5))
             {
+                Greenfoot.playSound("Finish.mp3");
                 getWorld().addObject(new Level1(), getWorld().getWidth()/2, getWorld().getHeight()/2);
                 getWorld().addObject(new Next(), getWorld().getWidth()/2, 550);
             }  
@@ -381,6 +403,7 @@ public class Players extends Actor
         {
             if(isTouching(Finish.class) & (Futuristic.countP == 7))
             {
+                Greenfoot.playSound("Finish.mp3");
                 getWorld().addObject(new Level1(), getWorld().getWidth()/2, getWorld().getHeight()/2);
                 getWorld().addObject(new Results(), getWorld().getWidth()/2, 550);
             }  

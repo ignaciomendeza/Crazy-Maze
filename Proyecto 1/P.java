@@ -26,6 +26,7 @@ public class P extends Players
     {
         if(obstacle1())
         {
+            Greenfoot.playSound("Hole.mp3");
             setLocation(43,568);
         }
     }
@@ -33,6 +34,7 @@ public class P extends Players
     {
         if(obstacle2())
         {
+            Greenfoot.playSound("Hit.mp3");
             setLocation(43,568);
             Futuristic.scoreP--;
         }

@@ -33,6 +33,7 @@ public class P1 extends Players
     {
         if(obstacle1())
         {
+            Greenfoot.playSound("Hole.mp3");
             setLocation(34,548);
         }
     }
@@ -42,11 +43,13 @@ public class P1 extends Players
         {
             if(getWorld() instanceof Futuristic2)
             {
+                Greenfoot.playSound("Hit.mp3");
                 setLocation(34,548);
                 Futuristic2.scoreP1--;
             }
             else if(getWorld() instanceof Volcano2)
             {
+                Greenfoot.playSound("Hit.mp3");
                 setLocation(34,548);
                 Volcano2.scoreVolP1--;
                 Futuristic2.scoreP1--;

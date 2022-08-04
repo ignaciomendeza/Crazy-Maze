@@ -20,6 +20,7 @@ public class Multi extends Buttons
     {
         if (Greenfoot.mouseClicked(this))
         {
+            Greenfoot.playSound("Intro2.mp3");
             Greenfoot.setWorld(new Futuristic2());
         }
     }
